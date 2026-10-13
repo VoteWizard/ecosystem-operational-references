@@ -2,7 +2,7 @@
 
 ## Summary
 
-This document defines a repeatable approach for validating Morpho vault deployments and market configuration, then applies that approach to the specific in-scope deployments as a worked example. The verification flow covers canonical Morpho infrastructure, factory deployment provenance, market and oracle parameters, vault roles, timelock settings, and audit coverage.
+This document defines a repeatable approach for validating Morpho vault deployments and market configuration, then applies that approach to the specific in-scope deployments as a worked example. The verification flow covers canonical Morpho infrastructure, factory deployment provenance, market and oracle parameters, vault roles, timelock settings, and audit coverage. Its output is the Morpho Verification report, which records the verification results and supporting evidence.
 
 
 ## Scope
@@ -140,9 +140,9 @@ Pass condition:
 - Audit coverage is documented
 - Any source-to-bytecode uncertainty is explicitly disclosed
 
-### 8. Record Results in an Evidence Matrix
+### 8. Record Results in the Morpho Verification report
 
-For each checked item, record:
+Record the verification results and supporting evidence in the Morpho Verification report. For each checked item, record:
 
 - Scope reference
 - Contract or market
@@ -152,7 +152,7 @@ For each checked item, record:
 - Notes
 
 
-## Sky Morpho Deployment Verification Results
+## Morpho Verification report (Worked Example)
 Objective: verify section 3 contract addresses and deployment provenance against Morpho docs and factory creation evidence.
 
 | Section | Vault | Contract Type | Contract Address | Expected Source / Factory | Evidence (Doc or Tx) | Result | Notes |
