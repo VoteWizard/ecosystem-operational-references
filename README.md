@@ -11,7 +11,8 @@ This repository is intended to operationalize the relevant Atlas requirements an
 ```
 ecosystem-operational-references/
 ├── templates/
-│   └── technical-scope-template.md
+│   ├── technical-scope-template.md
+│   └── vault-change-note-template.md
 ├── checklists/
 │   └── deployment-checklist.md
 ├── examples/
@@ -41,6 +42,12 @@ ecosystem-operational-references/
 
 - **Sky Governance path** (Prime Agents whose Root Edit Primitive is not yet operational): by **Wednesday, 16:00 UTC of Week 1** of the Prime Spell Process.
 - **Independent Governance path** (Prime Agents whose Root Edit Primitive is operational): by **end of Friday of Week 1** of the Prime Spell Process.
+
+### Vault Change Note Template (`templates/vault-change-note-template.md`)
+
+**What it is:** A standardized template for announcing a change to a Morpho vault already onboarded through a Technical Scope, where no new contract is deployed and no new market is created. Core GovOps may require a Technical Scope for any change.
+
+**Where to submit:** As a Forum post under the Prime Agent's Forum category, before the change is submitted to the vault's timelock or, where no timelock applies, executed. Where the change alters the Emergency actions or Monitoring of the onboarding Technical Scope, those sections are updated and submitted again through the private channel described above. Submissions, executions and revocations are reported as replies to the post within 24 hours, using the Execution Report section of the template.
 
 ### Deployment Checklist (`checklists/deployment-checklist.md`)
 
@@ -80,6 +87,10 @@ Each template and checklist must be completed and submitted separately, in accor
 ### Technical Scope Template
 
 The Technical Scope Template is maintained by Core GovOps. All changes must be submitted as a Pull Request in this repository and require two (2) approvals, one (1) from each Core Spell Team, before they can be merged.
+
+### Vault Change Note Template
+
+The Vault Change Note Template is maintained by Core GovOps. All changes must be submitted as a Pull Request in this repository and require two (2) approvals, one (1) from each Core Spell Team, before they can be merged.
 
 ### Deployment Checklist
 
