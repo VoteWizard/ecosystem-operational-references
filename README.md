@@ -45,9 +45,9 @@ ecosystem-operational-references/
 
 ### Vault Change Note Template (`templates/vault-change-note-template.md`)
 
-**What it is:** A standardized template for announcing a change to a Morpho vault already onboarded through a Technical Scope, where no new contract is deployed and no new market is created. Core GovOps may require a Technical Scope for any change.
+**What it is:** A standardized template for announcing a change to a Morpho vault already recorded in a Prime Agent Artifact, where no new contract is deployed and no new market is created. Core GovOps may require a Technical Scope instead.
 
-**Where to submit:** As a Forum post under the Prime Agent's Forum category, before the change is submitted to the vault's timelock or, where no timelock applies, executed. Where the change alters the Emergency actions or Monitoring of the onboarding Technical Scope, those sections are updated and submitted again through the private channel described above. Submissions, executions and revocations are reported as replies to the post within 24 hours, using the Execution Report section of the template.
+**Where to submit:** As a Forum post under the Prime Agent's Forum category, before the change is queued in the vault's timelock or, where no timelock applies, executed. Where the change alters the Emergency actions or Monitoring of the onboarding Technical Scope, those sections are updated and submitted again through the private channel described above. Queueings, executions and revocations are reported as replies to the post within 24 hours, using the Execution Report section of the template.
 
 ### Deployment Checklist (`checklists/deployment-checklist.md`)
 
