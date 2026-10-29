@@ -1,4 +1,4 @@
-# Vault Change Note Template
+# Morpho Vault Change Note Template
 
 > [!NOTE]
 > ### When this template can be used
