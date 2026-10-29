@@ -66,7 +66,7 @@
 ## Artifact update
 
 > [!NOTE]
-> List every value recorded in the Prime Agent Artifact that the actions change. For a change requiring governance approval, the Artifact Edit is submitted with the vote. For a disclosure-only change, the Operational Facilitator opens the pull request on the basis of this note and merges it once the change is executed and reported (A.2.2.10.1.1.1.3.6.1.2).
+> List every value recorded in the Prime Agent Artifact that the actions change. For a change requiring governance approval, the Artifact Edit Proposal is what the vote approves, through the Prime Agent's Root Edit process (A.2.2.10.1.1.1.3.6). For a disclosure-only change, the Operational Facilitator opens the pull request on the basis of this note and merges it once the change is executed and reported (A.2.2.10.1.1.1.3.6.1.2).
 
 - Artifact documents and values affected:
 - Pull request or proposal:
