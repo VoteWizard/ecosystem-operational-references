@@ -84,7 +84,7 @@
 # Execution Report
 
 > [!WARNING]
-> **NOT PART OF THE ANNOUNCEMENT — remove this section before posting.** Each report is posted as a reply to the announcement within 24 hours of each queueing (or execution, where no timelock applies) and of any revocation, by the holder of the role that performed the action (A.2.2.10.1.1.1.3.6.2.2). Where a role is held jointly, the Operational Executor Agent reports if it is one of the holders; otherwise, the Prime Agent Artifact designates the reporting entity.
+> **NOT PART OF THE ANNOUNCEMENT — remove this section before posting.** Each report is posted as a reply to the announcement (or, where the change was executed before it was announced, in a new Forum post under the Prime Agent's Forum category) within 24 hours of each queueing (or execution, where no timelock applies) and of any revocation, by the holder of the role that performed the action (A.2.2.10.1.1.1.3.6.2.2). Where a role is held jointly, the Operational Executor Agent reports if it is one of the holders; otherwise, the Prime Agent Artifact designates the reporting entity, and where it designates none, the Prime Agent's Operational Facilitator designates it in a Forum post under the Prime Agent's Forum category.
 
 1. **[Action number and name, as announced]**
     - Transaction hash:
