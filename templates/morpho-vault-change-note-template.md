@@ -19,7 +19,7 @@
 ## Reference
 
 > [!NOTE]
-> Links to the onboarding record. The onboarding Technical Scope already contains the deployment, audit, role and address context; don't repeat it here.
+> Links to the vault's record. The Technical Scope this note references already contains the deployment, audit, role and address context; don't repeat it here.
 
 - Prime Agent:
 - Vault name and token symbol:
