@@ -25,7 +25,7 @@
 - Vault name and token symbol:
 - Vault address (linked to the explorer) and chain:
 - Vault version (Morpho Vaults V1.1 or V2):
-- Onboarding Technical Scope (Forum URL), where one exists:
+- Onboarding Technical Scope (Forum URL), or the Technical Scope used for the first change where the vault was onboarded without one:
 - Instance Configuration Document (Atlas document number and URL):
 
 ## Change category
