@@ -71,12 +71,12 @@
 - Artifact documents and values affected:
 - Pull request or proposal:
 
-## Emergency actions and monitoring
+## Security-sensitive sections
 
 > [!NOTE]
-> State whether the Emergency actions and Monitoring sections of the onboarding Technical Scope still apply unchanged. If not, don't describe the new content here: update the affected sections and submit them again, together with this note, through the private submission channel (A.1.10.2.5.2.1.1). The original Technical Scope post is not modified.
+> State whether the sections of the Technical Scope this note references that the Technical Scope Template marks as security-sensitive (currently Technical risk self-assessment, Emergency actions and Monitoring) still apply unchanged. If not, don't describe the new content here: update the affected sections and submit them again, together with this note, through the private submission channel (A.1.10.2.5.2.1.1). The original Technical Scope post is not modified.
 
-- Unchanged from the onboarding Technical Scope:
+- Unchanged from the referenced Technical Scope:
 - If not, private submission reference:
 
 ---
