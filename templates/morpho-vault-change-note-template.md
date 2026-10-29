@@ -4,7 +4,7 @@
 > ### When this template can be used
 > - Only for a change to a Morpho vault, its adapters, or its markets, where the vault is recorded in a Prime Agent Artifact as an Instance of the Allocation System Primitive.
 > - Only where no new contract is deployed and no new market is created, and the change falls within A.2.2.10.1.1.1.3.6.1.1 (Morpho Vault Changes Requiring Governance Approval) or A.2.2.10.1.1.1.3.6.1.2 (Morpho Vault Changes Requiring Disclosure Only). Otherwise, use the General Technical Scope Template.
-> - Core GovOps can require a Technical Scope instead of a Vault Change Note.
+> - Core GovOps can require a Technical Scope instead of a Morpho Vault Change Note.
 > - Urgent and Emergency actions are not announced with this template (see A.2.2.10.1.1.1.3.6.1.3).
 
 > [!NOTE]
@@ -13,7 +13,7 @@
 > - All notes and warnings should be removed from the filled-in template before posting or submitting.
 > - All addresses have to be in a checksummed format.
 > - All times have to be in UTC. All on-chain values have to state the block at which they were read.
-> - One Vault Change Note covers one vault and its adapters. Each on-chain call is listed as a separate action, in execution order.
+> - One Morpho Vault Change Note covers one vault and its adapters. Each on-chain call is listed as a separate action, in execution order.
 > - The title of the Forum post is `[Chain] <Prime Agent> Liquidity Layer: <summary of the change>`.
 
 ## Reference
@@ -97,4 +97,4 @@
 1. **[Revoked action number and name, as announced]**
     - Transaction hash of the revocation:
     - Reason:
-    - Next step (resubmission, new Vault Change Note, or none):
+    - Next step (resubmission, new Morpho Vault Change Note, or none):
