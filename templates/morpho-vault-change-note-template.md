@@ -90,7 +90,7 @@
     - Transaction hash:
     - Change as queued or executed (confirm that it matches the announced values, or state the difference):
     - UTC time at which the change becomes executable (or "executed immediately"):
-    - Value read back after execution:
+    - Value read back after execution (where executed; otherwise "not yet executed"):
     - Governance vote (link and result), if applicable:
     - If queued before approval: statement that approval had not been obtained at queueing, and the expected poll closing time used:
 
