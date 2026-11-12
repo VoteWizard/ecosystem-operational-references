@@ -2,10 +2,12 @@
 
 > [!NOTE]
 > ### When this template can be used
-> - Only for a change to a Morpho vault, its adapters, or its markets, where the vault is recorded in a Prime Agent Artifact as an Instance of the Allocation System Primitive.
+> - Only for a change to a Morpho vault, its adapters, or its markets, where the vault is recorded in a Prime Agent Artifact as an Instance of the Allocation System Primitive and was onboarded through a Technical Scope. A vault onboarded without a Technical Scope announces its first change with the General Technical Scope Template, and later notes for that vault reference that Technical Scope (A.1.10.2.5.2.4).
 > - Only where no new contract is deployed and no new market is created, and the change falls within A.2.2.10.1.1.1.3.6.1.1 (Morpho Vault Changes Requiring Governance Approval) or A.2.2.10.1.1.1.3.6.1.2 (Morpho Vault Changes Requiring Disclosure Only). Otherwise, use the General Technical Scope Template.
 > - Core GovOps can require a Technical Scope instead of a Morpho Vault Change Note.
 > - Urgent and Emergency actions are not announced with this template (see A.2.2.10.1.1.1.3.6.1.3).
+> - Not for a change executed through an Executive Vote, which is announced in the Prime Spell's Forum post with its Technical Scope and recorded through the spell process (A.2.2.10.1.1.1.3.6.2.1, A.2.2.10.1.1.1.3.6.2.2).
+> - Revoking a queued change, removing an Allocator, decreasing a cap, and setting or changing the force deallocate penalty may be executed before they are announced. They are then reported within 24 hours in a new Forum post, using the Execution Report section (A.2.2.10.1.1.1.3.6.2.1, A.2.2.10.1.1.1.3.6.2.2).
 
 > [!NOTE]
 > ### General rules on **filling out** the template
@@ -40,13 +42,15 @@
 
 - Governance vote, if the change requires one (link, or expected opening and closing times):
 - Queueing before approval, if the Prime Agent Artifact allows it: the conditions, and how each early queueing meets them:
+- Entity that announces and reports, and why it is that entity under A.2.2.10.1.1.1.3.6.2.1. Where the Operational Facilitator designated it, link the Forum post:
+- Addresses that may revoke each queued action, including any additional revokers the Prime Agent Artifact designates:
 
 ## The reason(s) behind this update
 
 ## Proposed actions
 
 > [!NOTE]
-> List every action planned to be performed, in execution order, with exact input values and their sources, as well as the exact address that will perform those actions. Current values are read at a stated block, with a check that no change is pending on the targeted function. In case the actions are planned to be performed by a multisig, this section should link already staged transactions.
+> List every action planned to be performed, in execution order, with exact input values and their sources, as well as the exact address that will perform those actions. Current values are read at a stated block. List every operation pending in the vault's timelock at that block under "Pending timelock operations" below, including those on other functions. List any revocation as an action (A.2.2.10.1.1.1.3.6.1.2). In case the actions are planned to be performed by a multisig, this section should link already staged transactions.
 
 1. **[What is proposed]**
     - Contract being called:
@@ -58,10 +62,33 @@
             - Proposed value:
             - External source of the value or an explanation of how this value can be verified, and who has to confirm it:
     - Calldata:
-    - Applicable timelock delay (and the minimum required by A.2.2.10.1.1.1.3.3, if any):
+    - Applicable timelock delay and its source. State the vault's current delay, the minimum required by A.2.2.10.1.1.1.3.3 where one applies, and any longer delay required by the Prime Agent Artifact:
     - Planned queueing time:
     - Earliest executable time:
     - Planned execution time and executor:
+
+### Pending timelock operations
+
+> [!NOTE]
+> Every operation pending in the vault's timelock at the stated block, or "none".
+
+1. **[Function and arguments as submitted]**
+    - Executable from (UTC):
+    - Conflicts with an action in this note:
+    - Revoked by this note (action number) or left to execute:
+
+### Markets or adapters added to the vault for the first time
+
+> [!NOTE]
+> Required for every market or adapter added that the referenced Technical Scope does not cover. Provide the references below, the applicable checks from the Morpho Deployment Verification Guide (A.1.10.2.5.2.3), and the updated Morpho Verification Report entry (A.1.10.2.5.2.3.2).
+
+1. **[Action number: market or adapter being added]**
+    - Market (id, loan and collateral assets, oracle, IRM, LLTV) or adapter (address, type, underlying market or vault):
+    - Deployment provenance:
+    - Compliance with the Market Eligibility Requirements in A.2.2.10.1.1.1.3.2 for the loan asset, the collateral and its LLTV, the oracle methodology and the interest rate model:
+    - Oracle configuration check (guide section 5):
+    - Audit coverage, where applicable:
+    - Morpho Verification Report entry and verifier:
 
 ## Artifact update
 
@@ -84,17 +111,24 @@
 # Execution Report
 
 > [!WARNING]
-> **NOT PART OF THE ANNOUNCEMENT — remove this section before posting.** Each report is posted as a reply to the announcement (or, where the change was executed before it was announced, in a new Forum post under the Prime Agent's Forum category) within 24 hours of each queueing (or execution, where no timelock applies) and of any revocation, by the holder of the role that performed the action (A.2.2.10.1.1.1.3.6.2.2). Where a role is held jointly, the Operational Executor Agent reports if it is one of the holders; otherwise, the Prime Agent Artifact designates the reporting entity, and where it designates none, the Prime Agent's Operational Facilitator designates it in a Forum post under the Prime Agent's Forum category.
+> **NOT PART OF THE ANNOUNCEMENT — remove this section before posting.** Each report is posted as a reply to the announcement (or, where the change was executed before it was announced, in a new Forum post under the Prime Agent's Forum category) within 24 hours of each queueing (or execution, where no timelock applies) and of any revocation, by the holder of the role that performed the action (A.2.2.10.1.1.1.3.6.2.2). No further report is required when a queued change later executes. Where a role is held jointly, the Operational Executor Agent reports if it is one of the holders. Where a role is held by a contract, or where no joint holder is the Operational Executor Agent, the entity designated for that role in the Prime Agent Artifact reports; where the Artifact designates none, the Prime Agent's Operational Facilitator designates the reporting entity in a Forum post under the Prime Agent's Forum category.
+
+## Queued or executed actions
 
 1. **[Action number and name, as announced]**
     - Transaction hash:
     - Change as queued or executed (confirm that it matches the announced values, or state the difference):
-    - UTC time at which the change becomes executable (or "executed immediately"):
+    - UTC time at which the change becomes executable, or at which it was executed where no timelock applies:
     - Value read back after execution (where executed; otherwise "not yet executed"):
     - Governance vote (link and result), if applicable:
     - If queued before approval: statement that approval had not been obtained at queueing, and the expected poll closing time used:
 
+## Revoked actions
+
 1. **[Revoked action number and name, as announced]**
     - Transaction hash of the revocation:
+    - UTC time of the revocation:
+    - Change revoked (as queued, with its announced values):
+    - Governance vote (link and result), if applicable:
     - Reason:
     - Next step (resubmission, new Morpho Vault Change Note, or none):
