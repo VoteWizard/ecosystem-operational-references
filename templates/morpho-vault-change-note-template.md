@@ -50,7 +50,7 @@
 ## Proposed actions
 
 > [!NOTE]
-> List every action planned to be performed, in execution order, with exact input values and their sources, as well as the exact address that will perform those actions. Current values are read at a stated block. List every operation pending in the vault's timelock at that block under "Pending timelock operations" below, including those on other functions. List any revocation as an action (A.2.2.10.1.1.1.3.6.1.2). In case the actions are planned to be performed by a multisig, this section should link already staged transactions.
+> List every action planned to be performed, in execution order, with exact input values and their sources, as well as the exact address that will perform those actions. Current values are read at a stated block. List every operation pending in the timelock of the vault or of any of its adapters at that block under "Pending timelock operations" below, including those on other functions. List any revocation as an action (A.2.2.10.1.1.1.3.6.1.2). In case the actions are planned to be performed by a multisig, this section should link already staged transactions.
 
 1. **[What is proposed]**
     - Contract being called:
@@ -62,7 +62,8 @@
             - Proposed value:
             - External source of the value or an explanation of how this value can be verified, and who has to confirm it:
     - Calldata:
-    - Applicable timelock delay and its source. State the vault's current delay, the minimum required by A.2.2.10.1.1.1.3.3 where one applies, and any longer delay required by the Prime Agent Artifact:
+    - Effect on the Morpho Verification Report. Name any check this action makes outdated and link the updated report (A.1.10.2.5.2.3.2), or write "none":
+    - Applicable timelock delay and its source. State the current delay on the contract being called, the minimum required by A.2.2.10.1.1.1.3.3 where one applies, and any longer delay required by the Prime Agent Artifact:
     - Planned queueing time:
     - Earliest executable time:
     - Planned execution time and executor:
@@ -70,9 +71,10 @@
 ### Pending timelock operations
 
 > [!NOTE]
-> Every operation pending in the vault's timelock at the stated block, or "none".
+> Every operation pending in the timelock of the vault or of any of its adapters at the stated block, or "none".
 
 1. **[Function and arguments as submitted]**
+    - Contract (vault or adapter address):
     - Executable from (UTC):
     - Conflicts with an action in this note:
     - Revoked by this note (action number) or left to execute:
